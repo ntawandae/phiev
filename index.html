@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phiev CompuTech</title>
+<!--    stylesheet-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!--      <link rel="stylesheet" href="styles.css" />-->
+
+          <link rel="icon" href="styles.css" />
+      <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<!--    fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet" />
+     <!--light-slider-files-->
+<link rel="stylesheet" href="lightslider.css">
+    <link rel="stylesheet" href="jquery.convform.css">
+              <link rel="stylesheet" href="phiev.css" />
+    </head>
+    <body>
+        <!--        navigation-->
+        <nav class="fix-nav">
+<!--        social links-->
+            <div class="social-call">
+                <div class="operations">
+                    <span>Open Mon-Sat, 8:00am-5:00pm</span>
+                </div>
+<!--                social-links -->
+                <div class="social">
+                    <a href="#"><i class="fab fa-faceBuy-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+<!--                phone-number-->
+                <div class="phone">
+                    <span>call: <a href="tel:+263-774-659-090">+263774659090</a></span>
+                    
+                </div>
+            </div>
+<!--            menu bar-->
+            <div class="navigation">
+<!--            logo-->
+                <a href="#" class="logo">
+                <img src="./img/LOGOO.png" alt="">
+                </a>
+<!--                menu-->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About Us <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul>
+                            <li><a href="about.html#about">Phiev</a></li>
+                            <li><a href="about.html#our-story">Our Story</a></li>
+                            <li><a href="about.html#team">Leadership</a></li>
+                            <li><a href="about.html#policies">Policies</a></li>
+                        
+                        </ul>
+                    
+                    </li>
+                    <li><a href="404.html">Repair Services</a></li>
+                    <li><a href="about.html#how">How We Work</a></li>
+                    <li><a href="contact.html">Support <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul>
+                        <li><a href="contact.html">Locations</a></li>
+                        <li><a href="contact.html">Customer services</a></li>
+                        <li><a href="about.html#faq">FAQs</a></li>
+                        </ul>
+                    </li>
+                </ul>
+<!--                right-menu-->
+                <div class="right-menu">
+                    <a href="#" class="search"><i class="fas fa-search"></i></a>
+                    <a href="#" class="user"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </nav>
+        <!--        searchbar-->
+        <div class="search-bar">
+<!--            input-->
+            <div class="search-input">
+                <input type="text" placeholder="Search for products"/>
+<!--                cancel-btn-->
+                <a href="#" class="search-cancel"><i class="fas fa-times"></i></a>
+            </div>
+        </div>
+<!--        chat-->
+        
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+  <div class="my-conv-form-wrapper">
+          
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! How can I help you" name="category">
+        <option value="Tracking">Track a package ?</option>
+        <option value="Support">Chat with Support ?</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="Tracking">
+          <input type="text" name="Tracking Number" data-conv-question="Please, tell me your Tracking number">    
+        </div>
+        <div data-conv-case="Support" data-conv-fork="first-question2">
+          <input type="text" name="Name" data-conv-question="Please, enter your name and how we may help you"> 
+        </div>
+      </div>
+
+      <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you.Please hold on as I connect you to support personnel" data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Confirm">
+        <option value="Yes">Confirm</option>
+      </select>
+
+  	</form>
+	</div>
+</div>
+        
+        
+        
+<!--        accounts-->
+        <div class="form">
+            <div class="login-form">
+                <!--            form-cancel-->
+            <a href="#" class="form-cancel"><i class="fas fa-times"></i></a>
+
+                <strong>Login</strong>
+<!--                inputs-->
+                <form>
+                    <input type="email" placeholder="example@mail.com" name="email" required>
+                    <input type="password" placeholder="password" name="password" required>
+                    <input type="submit" value="Login">
+                </form>
+                <div class="form-btns">
+                    <a href="#" class="forgot">Forgot password ? <span>Click Here</span></a>
+                </div>
+                <div class="form-btns">
+                    <a href="#" class="sign-up-btn">Don't have account ? <span>Sign Up</span></a>
+                </div>
+            </div>
+<!--            sign-up-->
+            <div class="sign-up-form">
+                <!--            form-cancel-->
+            <a href="#" class="form-cancel"><i class="fas fa-times"></i></a>
+
+                <strong>Sign Up</strong>
+<!--                inputs-->
+                <form>
+                    <input type="text" placeholder="Full Name" name="full name" required>
+                    <input type="email" placeholder="example@mail.com" name="email" required>
+                    <input type="password" placeholder="password" name="password" required>
+                    <input type="submit" value="Login">
+                </form>
+                <div class="form-btns">
+                    <a href="#" class="already-user">Already have account? <span>Click Here</span></a>
+                </div>
+            </div>
+        </div>
+<!--        view-->
+        <div class="view-page smll-container single-product">
+    <div class="product-page rowW">
+    <div class="col-2">
+        <img src="img/xsm.jpeg" id="ProductImg">
+        <div class="small-img-row">
+            <div class="small-img-col">
+            <img src="img/xsm.jpeg" class="small-img">
+            </div>
+            <div class="small-img-col">
+            <img src="img/xsmb.jpeg" class="small-img">
+            </div>
+            <div class="small-img-col">
+            <img src="img/xsmb1.jpeg" class="small-img">
+            </div>
+            <div class="small-img-col">
+            <img src="img/xsmb2.jpeg" class="small-img">
+            </div>
+        </div>
+        </div>
+        <div class="col-2">
+        <p>Home/Product</p>
+            <h1>Iphone Xs-Max</h1>
+            <h4>$630</h4>
+            <select>
+            <option>Select Storage</option>
+                <option>64gb</option>
+                <option>128gb</option>
+                <option>256gb</option>
+                <option>512gb</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add to cart</a>
+            <h3>Product Details<i class="fa fa-indent"></i></h3>
+            <br>
+            <p>The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or ...</p>
+            <!--            form-cancel-->
+            <a href="#" class="form-cancel"><i class="fas fa-times"></i></a>
+        </div>
+    </div>
+</div>
+<!--        view end-->
+<!--        main start-->
+    <section class="main">
+        <div class="hero">
+  <div class="nav-categories">
+             <div class="category-nav">
+                                      <button class="category-heading" type="button" data-toggle="collapse" data-target="#demo">Categories <span class="fa fa-caret-down mrr" aria-hidden="true"></span></button>
+                 <div id="demo" class="collapse in">
+                 <ul class="cat-nav" >
+
+                 <div >
+                      <li class="f1"><a  href="">Laptops  </a>
+                     <ul>
+                        <li><a href="">Locations</a></li>
+                        <li><a href="">Customer services</a></li>
+                        <li><a href="index.html"#faq>FAQs</a></li>
+                        </ul>
+                     </li></div>
+                    <li class="f1"><a  href="">TV & Audio</a>
+                     <ul>
+                        <li><a href="">Locations</a></li>
+                        <li><a href="">Customer services</a></li>
+                        <li><a href="index.html"#faq>FAQs</a></li>
+                        </ul>
+                     </li>
+                                         <li><a href="">Camera </a></li>
+                    <li class="f1"><a  href="">Smartphone</a>
+                     <ul>
+                        <li><a href="">Locations</a></li>
+                        <li><a href="">Customer services</a></li>
+                        <li><a href="index.html"#faq>FAQs</a></li>
+                        </ul>
+                     </li>
+
+                     
+                            <li><a href="">Headphone</a></li>
+                            <li><a href="">Smartwatch</a></li>
+                            <li><a href="">Accesories</a></li>
+                            <li><a href="">Tablets</a></li>
+                            <li><a href="">Other Electronics</a></li>
+                        
+                    </ul>
+
+                     </div>                     
+                 
+
+  </div>
+            </div>
+  <div class="slider-menu">
+  <section class="heros">
+            <!--        Full-slider Heo-->
+         <ul id="adaptive" class="cs-hidden">
+        
+        <!--box-1--------------------------->
+        <li class="item-a">
+            <!---box------------------->
+    <div class="full-slider-box f-slide-1">
+        <img src="img/1.jpg">
+        <div class="f-slider-text-container">
+        <div class="f-slider-text">
+            <span>Limited Offer</span>
+            <strong>30% Off<br/> With <font>Promo Code</font></strong>
+            <a href="#" class="f-slider-btn">Buy Now</a>
+        </div>
+        </div>
+    
+    </div>
+    </li>
+     <!--box-2--------------------------->
+        <li class="item-b">
+            <!---box------------------->
+    <div class="full-slider-box f-slide-2">
+        <img src="img/2.jpg">
+        <div class="f-slider-text-container">
+        <div class="f-slider-text">
+            <span>Limited Offer</span>
+            <strong>30% Off<br/> With <font>Promo Code</font></strong>
+            <a href="#" class="f-slider-btn">Buy Now</a>
+        </div>
+        </div>
+    
+    </div>
+    </li>
+         <!--box-3--------------------------->
+         <li class="item-c">
+            <!---box------------------->
+    <div class="full-slider-box f-slide-3">
+        <img src="img/8.jpg">
+        <div class="f-slider-text-container">
+        <div class="f-slider-text">
+            <span>Limited Offer</span>
+            <strong>30% Off<br/> With <font>Promo Code</font></strong>
+            <a href="#" class="f-slider-btn">Buy Now</a>
+        </div>
+        </div>
+    
+    </div>
+    </li>
+     
+    </ul>
+        </section>          
+  </div>
+  <div class="right-hero">
+    <div class="t1">
+      <img src="img/1_1.jpg">
+      </div>
+    <div class="t2">
+      <img src="img/1_2.jpg">
+      </div>
+  </div>
+</div>
+        </section>
+        <!--        main end-->
+<!--        hot deals start-->
+        <section class="hot-deals">
+            <h1 class="heading">Hot Deals</h1>
+            <hr>
+            <div class="card-container">
+  <div class="card">
+    <img src="img/large-size/1.jpg" alt="" />
+    <div class="card-body">
+      <div class="rows">
+        <div class="card-title">
+            <div class="product-review">
+          <h4 class="manufacturer">Apple</h4>
+        <div class="rating-box">
+            <ul class="rating">
+            <li><i class="far fa-star"></i></li>
+                <li><i class="far fa-star"></i></li>
+                <li><i class="far fa-star"></i></li>
+                <li class=""><i class="far fa-star"></i></li>
+                <li class="no-star"><i class="far fa-star"></i></li>
+            </ul>
+
+        </div>
+</div>
+            <hr />
+
+<div class="price-box">
+                                  <h4 class="product-name">iPhone 12 Pro-Max</h4>
+            <h3 class="price">$1320</h3>
+            </div>
+<div class="countersection">
+                                                        <div class="li-countdown"><div class="count">00 <span>Days:</span></div> <div class="count">00 <span>Hours:</span></div> <div class="count">00 <span>Mins:</span></div><div class="count"> 00 <span>Sec:</span></div></div>
+                                                    </div>
+        </div>
+          <div class="card-link">
+              <a href="#" class="card-link-name" style="margin-right:25px"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#" class="card-link-name view" style="margin-right:25px"><i class="fas fa-eye"></i></a>
+              
+              <a href="#" class="card-link-name"><i class="far fa-heart"></i></a>
+            </div>
+
+      </div>
+      
+    </div>
+  </div>
+                <div class="card">
+    <img src="img/large-size/1.jpg" alt="" />
+    <div class="card-body">
+      <div class="rows">
+        <div class="card-title">
+            <div class="product-review">
+          <h4 class="manufacturer">Samsung</h4>
+        <div class="rating-box">
+            <ul class="rating">
+            <li><i class="far fa-star"></i></li>
+                <li><i class="far fa-star"></i></li>
+                <li><i class="far fa-star"></i></li>
+                <li class="no-star"><i class="far fa-star"></i></li>
+                <li class="no-star"><i class="far fa-star"></i></li>
+            </ul>
+
+        </div>
+</div>
+            <hr />
+
+<div class="price-box">
+                                  <h4 class="product-name">Samsung s9+</h4>
+            <h3 class="price">$320</h3>
+            </div>
+<div class="countersection">
+                                                        <div class="li-countdown"><div class="count">00 <span>Days:</span></div> <div class="count">00 <span>Hours:</span></div> <div class="count">00 <span>Mins:</span></div><div class="count"> 00 <span>Sec:</span></div></div>
+                                                    </div>
+        </div>
+          <div class="card-link">
+              <a href="#" class="card-link-name" style="margin-right:25px"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#" class="card-link-name view" style="margin-right:25px"><i class="fas fa-eye"></i></a>
+              
+              <a href="#" class="card-link-name"><i class="far fa-heart"></i></a>
+            </div>
+
+      </div>
+      
+    </div>
+  </div><div class="card">
+    <img src="img/large-size/1.jpg" alt="" />
+    <div class="card-body">
+      <div class="rows">
+        <div class="card-title">
+            <div class="product-review">
+          <h4 class="manufacturer">Samsung</h4>
+        <div class="rating-box">
+            <ul class="rating">
+            <li><i class="far fa-star"></i></li>
+                <li><i class="far fa-star"></i></li>
+                <li><i class="far fa-star"></i></li>
+                <li class="no-star"><i class="far fa-star"></i></li>
+                <li class="no-star"><i class="far fa-star"></i></li>
+            </ul>
+
+        </div>
+</div>
+            <hr />
+
+<div class="price-box">
+                                  <h4 class="product-name">Samsung s9+</h4>
+            <h3 class="price">$320</h3>
+            </div>
+<div class="countersection">
+                                                        <div class="li-countdown"><div class="count">00 <span>Days:</span></div> <div class="count">00 <span>Hours:</span></div> <div class="count">00 <span>Mins:</span></div><div class="count"> 00 <span>Sec:</span></div></div>
+                                                    </div>
+        </div>
+          <div class="card-link">
+              <a href="#" class="card-link-name" style="margin-right:25px"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#" class="card-link-name view" style="margin-right:25px"><i class="fas fa-eye"></i></a>
+              
+              <a href="#" class="card-link-name"><i class="far fa-heart"></i></a>
+            </div>
+
+      </div>
+      
+    </div>
+  </div><div class="card">
+    <img src="img/large-size/1.jpg" alt="" />
+    <div class="card-body">
+      <div class="rows">
+        <div class="card-title">
+            <div class="product-review">
+          <h4 class="manufacturer">Samsung</h4>
+        <div class="rating-box">
+            <ul class="rating">
+            <li><i class="far fa-star"></i></li>
+                <li><i class="far fa-star"></i></li>
+                <li><i class="far fa-star"></i></li>
+                <li class="no-star"><i class="far fa-star"></i></li>
+                <li class="no-star"><i class="far fa-star"></i></li>
+            </ul>
+
+        </div>
+</div>
+            <hr />
+
+<div class="price-box">
+                                  <h4 class="product-name">Samsung s9+</h4>
+            <h3 class="price">$320</h3>
+            </div>
+<div class="countersection">
+                                                        <div class="li-countdown"><div class="count">00 <span>Days:</span></div> <div class="count">00 <span>Hours:</span></div> <div class="count">00 <span>Mins:</span></div><div class="count"> 00 <span>Sec:</span></div></div>
+                                                    </div>
+        </div>
+          <div class="card-link">
+              <a href="#" class="card-link-name" style="margin-right:25px"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#" class="card-link-name view" style="margin-right:25px"><i class="fas fa-eye"></i></a>
+              
+              <a href="#" class="card-link-name"><i class="far fa-heart"></i></a>
+            </div>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+        </section>
+        <!--        hot deals end-->
+<!--        featured products start-->
+        <section class="featured">
+            <div class="max-width">
+            <div class="rows">
+            <div class="side-product">
+ <div class="card-container">
+  <div class="card">
+    <img src="img/large-size/1.jpg" alt="" />
+    <div class="card-body">
+      <div class="row">
+        <div class="card-title">
+            <div class="product-review">
+          <h4 class="manufacturer">Apple</h4>
+        <div class="rating-box">
+            <ul class="rating">
+            <li><i class="far fa-star"></i></li>
+                <li><i class="far fa-star"></i></li>
+                <li><i class="far fa-star"></i></li>
+                <li class=""><i class="far fa-star"></i></li>
+                <li class="no-star"><i class="far fa-star"></i></li>
+            </ul>
+
+        </div>
+</div>
+            <hr />
+
+<div class="price-box">
+                                  <h4 class="product-name">iPhone 12 Pro-Max</h4>
+            <h3 class="price">$1320</h3>
+            </div>
+<div class="countersection">
+                                                        <div class="li-countdown"><div class="count">00 <span>Days:</span></div> <div class="count">00 <span>Hours:</span></div> <div class="count">00 <span>Mins:</span></div><div class="count"> 00 <span>Sec:</span></div></div>
+                                                    </div>
+        </div>
+          <div class="card-link">
+              <a href="#" class="card-link-name" style="margin-right:25px"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#" class="card-link-name view" style="margin-right:25px"><i class="fas fa-eye"></i></a>
+              
+              <a href="#" class="card-link-name"><i class="far fa-heart"></i></a>
+            </div>
+
+      </div>
+      
+    </div>
+  </div>
+                </div>
+            </div>
+
+                <div class="right-tab">
+                    <h1 class="heading">Featured Products</h1>
+<!--    feature-product   -->
+  <div class="feature-product" id="feature-product">
+    <div class="max-width">
+      <div class="feature-product-content">
+        <div class="row">
+          <div class="feature-product-filter">
+            <span class="filter-item active" data-filter="all">Featured</span>
+            <span class="filter-item" data-filter="latest">On-Sale</span>
+            <span class="filter-item" data-filter="popular">Top 10</span>
+            <span class="filter-item" data-filter="upcoming">New Arrivals</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="feature-product-item latest upcoming">
+            <img src="img/1.jpg" alt="">
+            <div class="feature-product-link">
+               <a href="#" class="card-link-name" style="margin-right:25px"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#" class="card-link-name view" style="margin-right:25px"><i class="fas fa-eye"></i></a>
+              
+              <a href="#" class="card-link-name"><i class="far fa-heart"></i></a>            </div>
+          </div>
+
+          <div class="feature-product-item latest">
+            <img src="img/1_1.jpg" alt="">
+            <div class="feature-product-link">
+               <a href="#" class="card-link-name" style="margin-right:25px"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#" class="card-link-name view" style="margin-right:25px"><i class="fas fa-eye"></i></a>
+              
+              <a href="#" class="card-link-name"><i class="far fa-heart"></i></a>
+            </div>
+          </div>
+
+          <div class="feature-product-item popular">
+            <img src="img/1_3.jpg" alt="">
+            <div class="feature-product-link">
+               <a href="#" class="card-link-name" style="margin-right:25px"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#" class="card-link-name view" style="margin-right:25px"><i class="fas fa-eye"></i></a>
+              
+              <a href="#" class="card-link-name"><i class="far fa-heart"></i></a>
+            </div>
+          </div>
+
+          <div class="feature-product-item popular">
+            <img src="img/1_2.jpg" alt="">
+            <div class="feature-product-link">
+               <a href="#" class="card-link-name" style="margin-right:25px"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#" class="card-link-name view" style="margin-right:25px"><i class="fas fa-eye"></i></a>
+              
+              <a href="#" class="card-link-name"><i class="far fa-heart"></i></a>
+            </div>
+          </div>
+
+          <div class="feature-product-item latest upcoming">
+            <img src="img//1_4.jpg" alt="">
+            <div class="feature-product-link">
+               <a href="#" class="card-link-name" style="margin-right:25px"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#" class="card-link-name view" style="margin-right:25px"><i class="fas fa-eye"></i></a>
+              
+              <a href="#" class="card-link-name"><i class="far fa-heart"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>                    
+</div>
+            
+
+                </div>
+                                </div>
+        </section>
+        <!--        featured products end-->
+<!--services------------------------->
+    <section class="f-services">
+        <!--services-box---------->
+        <div class="services-box">
+            <i class="fas fa-shipping-fast"></i>
+            <span>Fast Shipping</span>
+            <p>Fast and free delivery for all orders</p>
+        </div>
+        <!--services-box---------->
+        <div class="services-box">
+            <i class="fas fa-headphones-alt"></i>
+            <span>Support 24/7</span>
+            <p>Have a question? Call a Specialist or chat online.</p>
+        </div>
+        <!--services-box---------->
+        <div class="services-box">
+            <i class="fas fa-money-check-alt"></i>
+            <span>Safe Pay</span>
+            <p>Pay with the world's popular and secure payment methods.</p>
+        </div>
+        <!--services-box---------->
+        <div class="services-box">
+            <i class="fas fa-sync"></i>
+            <span>100% Money Back</span>
+            <p>You have 7 days to Return</p>
+        </div>
+        
+    </section>
+<!--services end-->
+   <footer>
+        <div class="inner-footer"> 
+        <div class="footer-items">
+          <h1><a href="index.html"></a>Phiev CompuTech</h1>
+          <p>Phiev CompuTech, Inc. is a local courier, package delivery, express mail service provider of supply chain solutions. The Company operates in two segments: Transportation and Logistics.</p> 
+        </div>
+
+        <div class="footer-items">
+          <h2>Quick Links</h2>
+          <div class="border"></div>
+          <ul>
+            <a href="">
+              <li>Home</li>
+            </a>
+            <a href="">
+              <li>About Phiev</li>
+            </a>
+            <a href="">
+              <li>Our Team</li>
+            </a>
+            <a href="">
+              <li>Warranty</li>
+            </a>
+            <a href="">
+              <li>Cancellations & Returns</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="footer-items">
+          <h2 >More from Phiev</h2>
+          <div class="border"></div>
+          <ul>
+            <a href="">
+              <li>How To Buy</li>
+            </a>
+            <a href="">
+              <li>Shipping</li>
+            </a>
+            <a href="">
+              <li>Payment Options</li>
+            </a>
+            <a href="">
+              <li>FAQ</li>
+            </a>
+            <a href="contact.html">
+              <li>Phiev Locations</li>
+            </a>
+          </ul>
+        </div>
+<!--
+        <div class="up" id="up">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+-->
+        <div class="footer-items">
+
+          <h2>Contact us</h2>
+          <div class="border"></div>
+          <ul>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i> 1, XYZ Street, New Town</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+263-774-659-090">+263774659090</a></li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@eden.co.zw"> info@eden.co.zw</a></li>
+              <div class="social">
+            <a href="#"><i class="fab fa-faceBuy-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+          </ul>
+          
+              
+        </div>
+
+      </div>
+                  <div class="borderh"></div>
+        <!--copyright-------------->
+        <span class="copyright">
+            Copyright &copy; 2021 - Phiev CompuTech
+        </span>
+        <!--subcribe---------------->
+        <div class="subscribe">
+            <form>
+            <input type="email" placeholder="Example@gmail.com" required/>
+            <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </footer>
+        <!--        jQuery-->
+        <script src="jquery.js"></script>
+        <script src="lightslider.js"></script>
+        <script src="jquery.convform.js"></script>
+        <script src="main.js"></script>
+<script>
+          $('.category-nav .category-heading').click(function(){
+           $('.category-nav .category-heading span').toggleClass("rotate");
+         });
+        </script>
+        <script>
+        function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+        </script>
+        <script>
+        //data filtering
+ const filterContainer = document.querySelector(".feature-product-filter"),
+ featureproductItems = document.querySelectorAll(".feature-product-item");
+
+ filterContainer.addEventListener("click", (event) =>{
+   if(event.target.classList.contains("filter-item")){
+   	 // deactivate existing active 'filter-item'
+   	 filterContainer.querySelector(".active").classList.remove("active");
+   	 // activate new 'filter-item'
+   	 event.target.classList.add("active");
+   	 const filterValue = event.target.getAttribute("data-filter");
+   	 featureproductItems.forEach((item) =>{
+       if(item.classList.contains(filterValue) || filterValue === 'all'){
+       	item.classList.remove("hide");
+       	 item.classList.add("show");
+       }
+       else{
+       	item.classList.remove("show");
+       	item.classList.add("hide");
+       }
+   	 });
+   }
+ });
+        </script>
+        <script>
+var ProductImg = document.getElementById("ProductImg");
+    var SmallImg=document.getElementsByClassName("small-img");
+    SmallImg[0].onclick=function()
+    {
+        ProductImg.src=SmallImg[0].src;
+    }
+    SmallImg[1].onclick=function()
+    {
+        ProductImg.src=SmallImg[1].src;
+    }
+    SmallImg[2].onclick=function()
+    {
+        ProductImg.src=SmallImg[2].src;
+    }
+    SmallImg[3].onclick=function()
+    {
+        ProductImg.src=SmallImg[3].src;
+    }
+</script>
+            </body>
+</html>

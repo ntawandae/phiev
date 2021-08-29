@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eden Logistics</title>
+<!--    stylesheet-->
+      <link rel="stylesheet" href="phiev.css" />
+          <link rel="icon" href="styles.css" />
+      <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+<!--    fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet" />
+     <!--light-slider-files-->
+<link rel="stylesheet" href="lightslider.css">
+    <link rel="stylesheet" href="jquery.convform.css">
+    </head>
+    <body>
+        <!--        navigation-->
+        <nav class="fix-nav">
+<!--        social links-->
+            <div class="social-call">
+                <div class="operations">
+                    <span>Open Mon-Sat, 8:00am-5:00pm</span>
+                </div>
+<!--                social-links -->
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+<!--                phone-number-->
+                <div class="phone">
+                    <span>call: <a href="tel:+263-774-659-090">+263774659090</a></span>
+                    
+                </div>
+            </div>
+<!--            menu bar-->
+            <div class="navigation">
+<!--            logo-->
+                <a href="#" class="logo">
+                <img src="./img/logoo.png" alt="">
+                </a>
+<!--                menu-->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About Us <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul>
+                            <li><a href="about.html#about">Phiev</a></li>
+                            <li><a href="about.html#our-story">Our Story</a></li>
+                            <li><a href="about.html#team">Leadership</a></li>
+                            <li><a href="about.html#policies">Policies</a></li>
+                        
+                        </ul>
+                    
+                    </li>
+                    <li><a href="404.html">Services</a></li>
+                    <li><a href="about.html#how">How We Work</a></li>
+                    <li><a href="404.html">Logistics</a></li>
+                    <li><a href="contact.html">Support <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul>
+                        <li><a href="contact.html">Locations</a></li>
+                        <li><a href="contact.html">Customer services</a></li>
+                        <li><a href="about.html#faq">FAQs</a></li>
+                        </ul>
+                    </li>
+                </ul>
+<!--                right-menu-->
+                <div class="right-menu">
+                    <a href="#" class="search"><i class="fas fa-search"></i></a>
+                    <a href="#" class="user"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </nav>
+        <!--        searchbar-->
+        <div class="search-bar">
+<!--            input-->
+            <div class="search-input">
+                <input type="text" placeholder="Search or Tracking Numbers"/>
+<!--                cancel-btn-->
+                <a href="#" class="search-cancel"><i class="fas fa-times"></i></a>
+            </div>
+        </div>
+<!--        chat-->
+        
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+  <div class="my-conv-form-wrapper">
+          
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! How can I help you" name="category">
+        <option value="Tracking">Track a package ?</option>
+        <option value="Support">Chat with Support ?</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="Tracking">
+          <input type="text" name="Tracking Number" data-conv-question="Please, tell me your Tracking number">    
+        </div>
+        <div data-conv-case="Support" data-conv-fork="first-question2">
+          <input type="text" name="Name" data-conv-question="Please, enter your name and how we may help you"> 
+        </div>
+      </div>
+
+      <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you.Please hold on as I connect you to support personnel" data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Confirm">
+        <option value="Yes">Confirm</option>
+      </select>
+
+  	</form>
+	</div>
+</div>
+        
+        
+        
+<!--        accounts-->
+        <div class="form">
+            <div class="login-form">
+                <!--            form-cancel-->
+            <a href="#" class="form-cancel"><i class="fas fa-times"></i></a>
+
+                <strong>Login</strong>
+<!--                inputs-->
+                <form>
+                    <input type="email" placeholder="example@mail.com" name="email" required>
+                    <input type="password" placeholder="password" name="password" required>
+                    <input type="submit" value="Login">
+                </form>
+                <div class="form-btns">
+                    <a href="#" class="forgot">Forgot password ? <span>Click Here</span></a>
+                </div>
+                <div class="form-btns">
+                    <a href="#" class="sign-up-btn">Don't have account ? <span>Sign Up</span></a>
+                </div>
+            </div>
+<!--            sign-up-->
+            <div class="sign-up-form">
+                <!--            form-cancel-->
+            <a href="#" class="form-cancel"><i class="fas fa-times"></i></a>
+
+                <strong>Sign Up</strong>
+<!--                inputs-->
+                <form>
+                    <input type="text" placeholder="Full Name" name="full name" required>
+                    <input type="email" placeholder="example@mail.com" name="email" required>
+                    <input type="password" placeholder="password" name="password" required>
+                    <input type="submit" value="Login">
+                </form>
+                <div class="form-btns">
+                    <a href="#" class="already-user">Already have account? <span>Click Here</span></a>
+                </div>
+            </div>
+        </div>
+        <section class="about">
+        <div class="abt-container" id="about">
+            <div class="abt-left">
+                <div class="about-heading">
+                <h1>About</h1>
+                <h6>Phiev CompuTech</h6>
+            </div>
+                <h3>What we <strong>do</strong></h3>
+                <p>Phiev CompuTech gives you a chance to quickly and easily find any electrical gadget you want and have it delivered to your home in no time, regardless of your location, as long as it is in Africa. We also provide consultation services on all computer related topics.</p>
+                <h3>Why Customers <strong>Love Us</strong></h3>
+                <p>We have been in the business for quite a while now, and in that time we have not only managed to make close relationships with numerous suppliers all over the world, but also to recognize what people need. This means that we are always able to offer all the latest electrical gadgets, great prices, reliable service, fast delivery and premium customer support.</p>
+            
+            </div>
+            <div class="abt-right">
+            <img src="img/abt.jpeg">
+            </div>
+            </div>
+            <div class="abt-container2" id="our-story">
+            <div class="abt-left2">
+            <img src="img/abt2.jpeg">
+            </div>
+            <div class="abt-right2">
+                <div class="about-heading">
+                <h1>Our Story</h1>
+                <h6>Phiev CompuTech</h6>
+            </div>
+                <h3><strong>Beginning</strong></h3>
+                <p>Phiev CompuTech website was launched in 2021, but its story actually began a few years before that when two brothers and the young brother's girlfriend decided to go into business together. We started selling phones on social media platforms, but our combined ambition, drive and abilities soon made us look for new challenges and new markets. Starting an online shop provided for and allowed us to develop a strong international presence in a number of African countries.</p>
+                <h3><strong>Today</strong></h3>
+                <p>Collective experience of our team members and the years we have spent in the business allowed us to develop a vast network of suppliers, ensuring that our customers will always find what they are looking for.</p>
+                <p>
+Our affordability, fast and reliable delivery, and the fact that you will always find what you are looking for in our offer, have made us stand out in the market, but they are simply symptoms of our dedication to what we are doing and our desire to constantly keep improving. We know that in order to do that, we need to keep in close touch with our customers and listen to their suggestions and critiques. This is why our customer service, is always there to answer any question that you may have.</p>
+            
+            </div>
+            </div>
+  <section class="team-section" id="team">
+      <div class="about-heading">
+                <h1>Our Team</h1>
+                <h6>Phiev CompuTech</h6>
+            </div>
+      <div class="pple">
+          <div class="f-left">
+              <h3>Company <strong>Name</strong></h3>
+              <p class="par">The name <strong>PHIEV</strong> is a combination of names of the three co-founders of the company. We thought this would makes us be at the center of the business and  increases a sense of connection to the business. Up to this day, this serves as a reminder that we aren’t just a money-making machine but we’re real people who cares about doing good work for our names' sake.   </p>
+          </div>
+          <div class="f-right">
+      <div class="team" >
+            <img src="img/phil.jpeg" alt="">
+            <div class="info">
+                <div class="name">Phillip N</div>
+                <div class="title">Project Manager</div>
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-snapchat-ghost"></i>
+                </div>
+            </div>
+        </div>
+        <div class="team" >
+            <img src="img/emma.jpeg" alt="">
+            <div class="info">
+                <div class="name">Emmanuel N</div>
+                <div class="title">CEO and Founder</div>
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-snapchat-ghost"></i>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="team" >
+            <img src="img/vee.jpeg" alt="">
+            <div class="info">
+                <div class="name">Vimbai H</div>
+                <div class="title">Marketing Manager</div>
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-snapchat-ghost"></i>
+                </div>
+            </div>
+        </div>
+              </div>
+          </div>
+
+    </section>
+<!--            policies-->
+            <section class="policy" id="policies">
+            <div class="about-heading">
+                <h1>Our Policies</h1>
+                <h6>Phiev CompuTech</h6>
+            </div>
+      <div class="pple">
+          <div class="left-container">
+              <h3>Returns & <strong>Refunds</strong></h3>
+              <p class="par"><strong>PHIEV's</strong> core mantra is “Customer Satisfaction” for this we give a hassle-free Refund policy to all our customers.<br>
+                  <br>
+              <b>The process to be followed for Return Policy:</b><br>
+                  <br>
+              ~ Phiev reserves the right to reject the returns for any product depending on the damage of the product.<br>
+~   Notify us through the mail before 24hrs from the day the product received.<br>
+~   The customer will be notified through mail or message about the return acceptance within two days from the day of refund application.<br>
+~   At the time of product return the product should have all the accessories and should be in the original packaging.<br>
+~   At the time of the return process make sure that you submit the invoice as proof of purchase and ask for acknowledgment copy.<br>
+~   The product return acceptance will be notified through mail.<br>
+~   If there is a manufacturing issue with the product the time of return will depend on the commitment given by the supplier. (normally 7 working days).
+              </p>
+          </div>
+          <div class="right-container">
+              <h3>Warranty & <strong>After Purchase Services</strong></h3>
+              <p class="par"><strong>PHIEV's</strong> products mainly have the seller warranty.<br>
+              ~ Most products have 6 months of free warranty provided by Phiev Computech<br>
+            ~   In Africa, with an original invoice you are entitled to 6 months service at an authorized service centre. In a case of improper functioning of the product or malfunction, the product is sent directly to the authorized service centre.<br>
+                  ~ In case that there is no service centre provided in the customer’s country, the customer needs to contact our Customer Support at warranty@phiev.co.zw, and our agent will provide you all the necessary shipping details to the closest service centre. Shipping costs to service centre (one way) will be covered by the customer. Please, keep in mind that if you don't send within the deadline set for you by Phiev support centre, you will lose the right to send the device to the service centre.<br>
+                  ~ Phiev will determine the condition of the product and offer you one of the following options:<br>
+
+~   Service: you will be forwarded to the closest service centre (official MobileShop service or other).<br>
+~   Replacement: The same product that you ordered will be shipped to you.<br>
+~   Refund: if all else fails, you will be refunded excluding insurance costs.
+              </p>
+      
+              </div>
+          </div>
+                </section>
+
+<!--            policies end-->
+            <!--        FAQs-->
+<section id="faq">
+<div  class="faq">
+  Frequently Asked <span>Questions</span>
+</div>
+<br>
+
+<div class="faq-content">
+<div class="faq-item">
+  <input type="checkbox" id="question1" name="q"  class="questions">
+  <label for="question1" class="question">
+       <div class="plus">+</div>
+Do your prices cover shipping costs?
+  </label>
+  <div class="answers">
+Most products have free shipping to Harare.
+    </div>
+</div>
+
+<div class="faq-item">
+  <input type="checkbox" id="question2" name="q" class="questions">
+  <label for="question2" class="question">
+    <div class="plus">+</div>
+     What forms of payment do you Accept?
+  </label>
+  <div class="answers">
+Cash, Bank transfer and Paypal  </div>
+</div>
+  
+<div class="faq-item">
+  <input type="checkbox" id="question3" name="q" class="questions">
+  <label for="question3" class="question">
+    <div class="plus">+</div>
+Do you help to buy goods not on your Catalogue from China?  
+  </label>
+  <div class="answers">
+yes, all legal products at an affordable fee.
+    </div>
+</div>
+    
+    <div class="faq-item">
+  <input type="checkbox" id="question4" name="q" class="questions">
+  <label for="question4" class="question">
+    <div class="plus">+</div>
+Do you do refunds?  
+  </label>
+  <div class="answers">
+We have a 7 day return policy after which no goods can be returned.
+    </div>
+</div>
+    
+    <div class="faq-item">
+  <input type="checkbox" id="question5" name="q" class="questions">
+  <label for="question5" class="question">
+    <div class="plus">+</div>
+What happens if goods take longer than expected to deliver?  
+  </label>
+  <div class="answers">
+    If goods are late by more than 7 days a free delivery coupon is made available for your next shipment.
+    </div>
+</div>
+    
+    <div class="faq-item">
+  <input type="checkbox" id="question6" name="q" class="questions">
+  <label for="question6" class="question">
+    <div class="plus">+</div>
+Is it possible to cancel my order and what would be the procedure of doing it?
+  </label>
+  <div class="answers">
+    a. Before customer pays product deposit order can be canceled.
+      <br>
+    b.Also, order can be canceled without additional charges while order is still in a possession of <strong>PHIEV</strong> or the order/request for delivery is not handed over to a courier service
+        </div>
+</div>
+    
+</div>        
+</section>         
+
+
+        </section>
+    
+   <footer>
+        <div class="inner-footer"> 
+        <div class="footer-items">
+          <h1><a href="index.html"></a>Phiev CompuTech</h1>
+          <p>Phiev CompuTech, Inc. is a local courier, package delivery, express mail service provider of supply chain solutions. The Company operates in two segments: Transportation and Logistics.</p> 
+        </div>
+
+        <div class="footer-items">
+          <h2>Quick Links</h2>
+          <div class="border"></div>
+          <ul>
+            <a href="">
+              <li>Home</li>
+            </a>
+            <a href="">
+              <li>About Phiev</li>
+            </a>
+            <a href="">
+              <li>Our Team</li>
+            </a>
+            <a href="">
+              <li>Warranty</li>
+            </a>
+            <a href="">
+              <li>Cancellations & Returns</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="footer-items">
+          <h2 >More from Phiev</h2>
+          <div class="border"></div>
+          <ul>
+            <a href="">
+              <li>How To Buy</li>
+            </a>
+            <a href="">
+              <li>Shipping</li>
+            </a>
+            <a href="">
+              <li>Payment Options</li>
+            </a>
+            <a href="">
+              <li>FAQ</li>
+            </a>
+            <a href="contact.html">
+              <li>Phiev Locations</li>
+            </a>
+          </ul>
+        </div>
+<!--
+        <div class="up" id="up">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+-->
+        <div class="footer-items">
+
+          <h2>Contact us</h2>
+          <div class="border"></div>
+          <ul>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i> 1, XYZ Street, New Town</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+263-774-659-090">+263774659090</a></li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@eden.co.zw"> info@eden.co.zw</a></li>
+              <div class="social">
+            <a href="#"><i class="fab fa-faceBuy-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+          </ul>
+          
+              
+        </div>
+
+      </div>
+                  <div class="borderh"></div>
+        <!--copyright-------------->
+        <span class="copyright">
+            Copyright &copy; 2021 - Phiev CompuTech
+        </span>
+        <!--subcribe---------------->
+        <div class="subscribe">
+            <form>
+            <input type="email" placeholder="Example@gmail.com" required/>
+            <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </footer>
+        <!--        jQuery-->
+        <script src="jquery.js"></script>
+        <script src="lightslider.js"></script>
+        <script src="jquery.convform.js"></script>
+        <script src="main.js"></script>
+
+            </body>
+</html>
